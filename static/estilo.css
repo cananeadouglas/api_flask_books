@@ -1,0 +1,102 @@
+body{
+    background: rgb(120, 192, 250);  /* Cor de fundo */
+    font: normal 15px ;  /**/
+}
+
+header {
+    color: rgb(0, 0, 0);/*cor da fonte */
+    text-align: center;/**/
+}
+
+section {
+    background: white;/*cor de fundo */
+    border-radius: 15px;/*bordas arredondadas*/
+    padding: 15px;/*espaço entre o texto e a borda*/
+    width: 500px;/*largura*/
+    margin: auto;/*centralizar a div no meio da tela*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);/* sobreamento e cor*/
+}
+
+footer {
+    color: white;/* cor da fonte */
+    text-align: center;/* centralizar texto*/
+    font-style: italic; /* fonte itálica */
+}
+
+nav a {
+    color: rgb(0, 0, 0);/*cor da fonte */
+    text-align: center;/**/
+    padding: 15px;/*espaço entre o texto e a borda*/
+    border-radius: 10px;/*bordas arredondadas*/
+    background: white;/*cor de fundo */
+    margin: auto;/*centralizar a div no meio da tela*/
+
+}
+
+input[type=submit] {
+    width: 200px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);/* sobreamento e cor*/
+}
+
+input[type=number] {
+    width: 200px;
+    background-color: rgba(203, 200, 200, 0.866);
+    color: black;
+    padding: 10px 30px;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);/* sobreamento e cor*/
+}
+
+input[type=text] {
+    width: 200px;
+    background-color: rgba(203, 200, 200, 0.866);
+    color: black;
+    padding: 10px 30px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);/* sobreamento e cor*/
+}
+
+input[type=email] {
+    width: 200px;
+    background-color: rgba(203, 200, 200, 0.866);
+    color: black;
+    padding: 10px 30px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);/* sobreamento e cor*/
+}
+
+input[type=datetime] {
+    width: 200px;
+    background-color: rgba(203, 200, 200, 0.866);
+    color: black;
+    padding: 10px 30px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);/* sobreamento e cor*/
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}

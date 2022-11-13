@@ -1,19 +1,38 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect, url_for, render_template
+import json
 from src.db import livros
 
+#tinydb <- ver
+
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    variavel = "Você esta programando em Python Flask"
+    return render_template("index.html", variavel_base = variavel)
+
 
 # Consultar (todos) os livros
 @app.route('/livros', methods=['GET'])
 def obter_livros():
+    
     return jsonify(livros)
 
-# Consultar por (id)
-@app.route('/livros/<int:id>', methods=['GET'])
-def pesquisar_livros(id):
-    for livro in livros:
-        if livro.get('id') == id:
-            return jsonify(livro)
+
+
+# Consultar por (id) não está funcionando
+@app.route('/livrosporid/{id}', methods=['GET'])
+def pesquisar_livros(id: int):
+    if request.method == "GET":
+        idlivro = int(request.form['idlivro'])
+        for livro in livros:
+            if livro.get('id') == idlivro:
+                return jsonify(livro)
+    else:
+        return "error"
+    
+
+
 
 
 # Editar por

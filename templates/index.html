@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <header>
+        <h2>Page Index</h2>
+    </header>
+    
+    <section>
+        <div>
+            {{ variavel_base }}
+
+            <br><br>
+            <label type="text">Ver todos os livros</label>
+            <imput type="submit"><a href="/livros">VER</a> </input>
+            <br>
+
+
+            <form action = "/livrosporid" method="post">  
+                <table>  
+                    <tr><td>Id do livro</td><td><input type="number" name="idlivro"></td></tr>    
+                    <tr><td><input type="submit" value="Submit"></td></tr>  
+                </table>  
+                </form>
+
+            
+
+            <br><br>
+            <label type="text"> Rebaixamento Ideal </label>
+            <imput type="submit"><a href="/rebaixamento">TESTAR</a> </input>
+            <br>
+        </div>
+    </section>
+    <br>
+    <footer> 
+    <section>
+        <div id="repetir">
+            
+        </div>
+    </section>
+    </footer><br>
+
+    <footer>
+        
+    </footer>
+    
+    
+</body>
+</html>
